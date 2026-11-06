@@ -1,25 +1,40 @@
 {
   "expo": {
-    "name": "killthefly-app",
-    "slug": "killthefly-app",
+    "name": "Swatter",
+    "slug": "swatter",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.themo.swatter"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#E6D9B8",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.themo.swatter"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "scheme": "swatter",
+    "backgroundColor": "#F3EAD3",
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 200,
+          "backgroundColor": "#2B1D14"
+        }
+      ]
+    ]
   }
 }
